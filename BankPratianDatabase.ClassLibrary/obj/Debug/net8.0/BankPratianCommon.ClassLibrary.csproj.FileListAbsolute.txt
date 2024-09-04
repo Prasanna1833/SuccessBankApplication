@@ -1,0 +1,12 @@
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.AssemblyInfo.cs
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\bin\Debug\net8.0\BankPratianCommon.ClassLibrary.deps.json
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\bin\Debug\net8.0\BankPratianCommon.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\bin\Debug\net8.0\BankPratianCommon.ClassLibrary.pdb
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\refint\BankPratianCommon.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.pdb
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\ref\BankPratianCommon.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankPratianDatabase.ClassLibrary\obj\Debug\net8.0\BankPratianCommon.ClassLibrary.sourcelink.json

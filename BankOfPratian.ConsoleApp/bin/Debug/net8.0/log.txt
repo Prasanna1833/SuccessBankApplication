@@ -1,0 +1,988 @@
+2024-08-08 05:49:09.0737 ERROR Requested value 'reular' was not found. UserId= Action=Open a new account CustomMessage= System.ArgumentException: Requested value 'reular' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 679
+2024-08-08 06:33:32.1501 ERROR Requested value 'reular' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'reular' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 846
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 815
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 769
+2024-08-08 07:14:31.6928 ERROR Invalid object name 'dbo.Account'. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Account'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddAccount(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 38
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 447
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 861
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 826
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 778
+ClientConnectionId:e63437cf-8d6f-4b15-8411-013f5f9a8985
+Error Number:208,State:1,Class:16
+2024-08-08 07:22:08.0372 ERROR Column name or number of supplied values does not match table definition. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Column name or number of supplied values does not match table definition.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddTransaction(Transaction transaction, String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 57
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 480
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 891
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 828
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 778
+ClientConnectionId:5eb4f839-984e-4b20-a21c-55f57c6ad102
+Error Number:213,State:1,Class:16
+2024-08-08 10:54:44.2435 ERROR Violation of PRIMARY KEY constraint 'PK__Accounts__A47197054A4559CE'. Cannot insert duplicate key in object 'dbo.Accounts'. The duplicate key value is (SAV1000).
+The statement has been terminated. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Accounts__A47197054A4559CE'. Cannot insert duplicate key in object 'dbo.Accounts'. The duplicate key value is (SAV1000).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddAccount(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 38
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 32
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 188
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+ClientConnectionId:3f73ef67-dc0a-4ad1-a77d-81e9160006ca
+Error Number:2627,State:1,Class:14
+2024-08-08 10:56:48.5597 ERROR Violation of PRIMARY KEY constraint 'PK__Accounts__A47197054A4559CE'. Cannot insert duplicate key in object 'dbo.Accounts'. The duplicate key value is (SAV1000).
+The statement has been terminated. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Accounts__A47197054A4559CE'. Cannot insert duplicate key in object 'dbo.Accounts'. The duplicate key value is (SAV1000).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddAccount(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 38
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 32
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 188
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+ClientConnectionId:8f194878-7596-46ae-89f2-330f0326ddef
+Error Number:2627,State:1,Class:14
+2024-08-08 19:22:57.7662 ERROR Invalid object name 'Accounts'. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Accounts'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddAccount(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 38
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 32
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 188
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+ClientConnectionId:05a7454f-508b-4eef-b6b2-7b2064e188d6
+Error Number:208,State:1,Class:16
+2024-08-09 05:08:08.8161 ERROR Column name or number of supplied values does not match table definition. UserId= Action= CustomMessage= Microsoft.Data.SqlClient.SqlException (0x80131904): Column name or number of supplied values does not match table definition.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BankOfPratian.ConsoleApp.DatabaseManager.AddTransaction(Transaction transaction, String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\DatabaseManager.cs:line 58
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 65
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 218
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 155
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+ClientConnectionId:272a74a1-ec35-4211-8913-511abdfb6292
+Error Number:213,State:1,Class:16
+2024-08-09 14:29:52.6826 ERROR The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.Create(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 84
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 39
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 109
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:46dfe23a-f199-4725-a07d-a473879f21b2
+Error Number:547,State:0,Class:16
+2024-08-09 14:39:36.5533 ERROR Requested value 'gd' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'gd' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+2024-08-09 14:40:34.5404 ERROR The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.Create(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 84
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 39
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 109
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:85dbdfb1-732d-4669-8f5d-d14bba28d6dc
+Error Number:547,State:0,Class:16
+2024-08-09 14:43:59.8104 ERROR The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "CHK_PrivilegeType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Accounts", column 'PrivilegeType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.Create(IAccount account) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 84
+   at BankOfPratian.ConsoleApp.AccountManager.CreateAccount(String name, String pin, Double balance, PrivilegeType privilegeType, AccountType accType) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 39
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 109
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:85dbdfb1-732d-4669-8f5d-d14bba28d6dc
+Error Number:547,State:0,Class:16
+2024-08-10 16:58:52.4447 ERROR Requested value 'reular' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'reular' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+2024-08-10 21:24:06.5350 ERROR The variable name '@accno' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@balance". UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The variable name '@accno' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@balance".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.AddAmount(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 170
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 79
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 139
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 76
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:31ec7c34-c482-4dc4-99e8-f61378262e77
+Error Number:134,State:1,Class:15
+2024-08-10 21:27:37.6648 ERROR Must declare the scalar variable "@balance". UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@balance".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.AddAmount(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 149
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 79
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 139
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 76
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:777eacca-c6f5-4539-9fb0-3d91d4fb7e07
+Error Number:137,State:1,Class:15
+2024-08-10 21:29:42.9432 ERROR Invalid column name 'SAV1032'. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SAV1032'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.AddAmount(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 149
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 79
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 139
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 76
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:e06565ba-4bd6-4e81-b2d4-63fe98bf6fc2
+Error Number:207,State:1,Class:16
+2024-08-10 22:01:21.6888 ERROR Invalid column name 'SAV1034'. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SAV1034'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.DeductAmount(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 116
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 62
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 158
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+ClientConnectionId:0db4848f-ad63-4ad3-88ce-4f1562d8c571
+Error Number:207,State:1,Class:16
+2024-08-10 22:23:21.6451 ERROR Requested value 'reular' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'reular' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 105
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 74
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 26
+2024-08-11 01:44:54.0764 ERROR Invalid column name 'accountno'. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'accountno'.
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccoountByID(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 196
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 154
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:e5dafc8a-411c-4e1e-af91-db73063782b3
+Error Number:207,State:1,Class:16
+2024-08-11 01:56:14.2595 ERROR Invalid column name 'accountno'. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'accountno'.
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccoountByID(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 196
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 154
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:16c2f09c-1567-428e-8e9a-f89b3cefb2ce
+Error Number:207,State:1,Class:16
+2024-08-11 01:57:29.7961 ERROR Requested value 'Savings' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'Savings' was not found.
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccoountByID(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 196
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 154
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 01:59:38.0740 ERROR Invalid policy type: Savings-REGULAR UserId= Action= CustomMessage= BankPratianCommon.ClassLibrary.InvalidPolicyTypeException: Invalid policy type: Savings-REGULAR
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccoountByID(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 196
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 154
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 02:04:34.9023 ERROR Object reference not set to an instance of an object. UserId= Action= CustomMessage= System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount acc, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 54
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 163
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 02:11:30.5345 ERROR Object reference not set to an instance of an object. UserId= Action= CustomMessage= System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 54
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 163
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 10:54:14.9621 ERROR Object reference not set to an instance of an object. UserId= Action= CustomMessage= System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 60
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 164
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 11:09:55.7823 ERROR Object reference not set to an instance of an object. UserId= Action= CustomMessage= System.NullReferenceException: Object reference not set to an instance of an object.
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 60
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 163
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 21:41:47.2880 ERROR No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type.
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at System.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 58
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 21:50:14.3514 ERROR No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type.
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at System.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 21:51:23.0137 ERROR No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type.
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at System.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 21:53:07.2348 ERROR No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type.
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at System.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-11 21:55:40.5638 ERROR Must declare the scalar variable "@transactiontype". UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@transactiontype".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:9aa71602-4f8e-4709-a934-d5bc11fbdb1f
+Error Number:137,State:2,Class:15
+2024-08-11 21:59:43.0584 ERROR Must declare the scalar variable "@transactiontype". UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@transactiontype".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:ca5e0906-2224-449a-b0e4-1845af14a3f4
+Error Number:137,State:2,Class:15
+2024-08-11 22:10:38.6608 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:27bf4a1e-7fc8-4941-b503-3b0c740cb72a
+Error Number:547,State:0,Class:16
+2024-08-11 22:13:17.9292 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:747eeb4e-37a6-4235-9a61-91a0e92feba9
+Error Number:547,State:0,Class:16
+2024-08-11 22:17:09.7405 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:d5d9e4aa-f751-4d8a-94a0-11290eda3b0f
+Error Number:547,State:0,Class:16
+2024-08-11 22:17:55.8307 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:156f23c5-0862-4ba7-bcd4-c9d8d2384d6c
+Error Number:547,State:0,Class:16
+2024-08-11 22:22:24.0871 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:156f23c5-0862-4ba7-bcd4-c9d8d2384d6c
+Error Number:547,State:0,Class:16
+2024-08-11 22:22:58.4695 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 63
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:156f23c5-0862-4ba7-bcd4-c9d8d2384d6c
+Error Number:547,State:0,Class:16
+2024-08-11 22:25:59.8913 ERROR The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the CHECK constraint "chk_TransactionType". The conflict occurred in database "BankApplicationDataBase", table "dbo.Transactions", column 'transactionType'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 59
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:86d97abb-0df0-433c-8592-36fe3576faec
+Error Number:547,State:0,Class:16
+2024-08-11 23:20:48.8152 ERROR Invalid column name 'SAV1032'. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SAV1032'.
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.TransferFunds(String fromAccNo, String toAccNo, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 206
+   at BankOfPratian.ConsoleApp.AccountManager.TransferFunds(IAccount fromAccount, IAccount toAccount, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 105
+   at BankOfPratian.ConsoleApp.Program.TransferFunds() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 187
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 79
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:49aca63f-4039-4b4b-a461-c9480a396f21
+Error Number:207,State:1,Class:16
+2024-08-18 19:12:55.4499 ERROR Invalid PIN. UserId= Action= CustomMessage= BankPratianCommon.ClassLibrary.InvalidPinException: Invalid PIN.
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(IAccount fromAccount, String toExternalAcc, String bankCode, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 128
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 211
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 19:16:37.9848 ERROR Invalid PIN. UserId= Action= CustomMessage= BankPratianCommon.ClassLibrary.InvalidPinException: Invalid PIN.
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(IAccount fromAccount, String toExternalAcc, String bankCode, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 129
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 211
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 19:17:47.2550 ERROR Transfer amount exceeds daily limit. UserId= Action= CustomMessage= BankPratianCommon.ClassLibrary.DailyLimitExceededException: Transfer amount exceeds daily limit.
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(IAccount fromAccount, String toExternalAcc, String bankCode, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 125
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 211
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:07:42.3607 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 136
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 220
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:10:53.6886 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 136
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 220
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:16:34.4403 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 136
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 220
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:20:35.4377 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 137
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:22:17.3545 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 143
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:23:34.3942 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 143
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:29:24.8733 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 143
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:31:56.6654 ERROR Class not found: ICICIBankService UserId= Action= CustomMessage= System.InvalidOperationException: Class not found: ICICIBankService
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.LoadBankServices(String filePath) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 36
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory..ctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 12
+   at BankOfPratian.ConsoleApp.ExternalBankServiceFactory.GetInstance() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ExternalBankServiceFactory.cs:line 17
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 143
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:33:06.2631 ERROR No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type.
+   at PratianBankDatabase.ClassLibrary.ExternalBankRepository.Update(ExternalAccount accNo, Double amount, String bank) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\ExternalBankRepository.cs:line 44
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:36:32.9481 ERROR No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type.
+   at PratianBankDatabase.ClassLibrary.ExternalBankRepository.Update(ExternalAccount accNo, Double amount, String bank) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\ExternalBankRepository.cs:line 39
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:37:57.6434 ERROR No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type.
+   at PratianBankDatabase.ClassLibrary.ExternalBankRepository.Update(ExternalAccount accNo, Double amount, String bank) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\ExternalBankRepository.cs:line 39
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-18 23:41:34.8094 ERROR No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankOfPratian.ConsoleApp.ExternalAccount to a known managed provider native type.
+   at PratianBankDatabase.ClassLibrary.ExternalBankRepository.Update(ExternalAccount accNo, Double amount, String bank) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\ExternalBankRepository.cs:line 39
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 153
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-19 22:48:26.7697 ERROR The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception.
+ ---> System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 10
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 21
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-19 22:50:40.4633 ERROR The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception.
+ ---> System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 10
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 21
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-19 23:04:47.1458 ERROR AccType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccType
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.FindAllTransactions(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 309
+   at BankOfPratian.ConsoleApp.AccountManager.FindTransactionForAccount(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 31
+   at BankOfPratian.ConsoleApp.Program.ViewTransactionHistory() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 252
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 82
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-19 23:04:57.3263 ERROR The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.ResultGenerator' threw an exception.
+ ---> System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 10
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 21
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-08-19 23:07:46.3604 ERROR FromAccount UserId= Action= CustomMessage= System.IndexOutOfRangeException: FromAccount
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 86
+   at BankOfPratian.ConsoleApp.ResultGenerator.get_transactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 11
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 21
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 12:48:36.3055 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 13
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.LogTransaction(String accNo, TransactionType type, Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 39
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 136
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 219
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 12:52:49.7311 ERROR AccType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccType
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.FindAllTransactions(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 309
+   at BankOfPratian.ConsoleApp.AccountManager.FindTransactionForAccount(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 31
+   at BankOfPratian.ConsoleApp.Program.ViewTransactionHistory() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 250
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 12:52:58.4227 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 13
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 17
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 13:09:45.4713 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 13:12:07.5249 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 13:13:23.7817 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 13:15:15.8126 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 13:21:33.6896 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:09:28.3023 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 81
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:09:42.0193 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayAllTransfers() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 188
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 82
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:09:46.5541 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayAllWithdrawals() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 206
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:09:51.0898 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayAllDeposits() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 224
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 84
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:09:56.4096 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.GetTotalNoOfAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 129
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 85
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:10:08.0016 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayNoOfAccTypeWise() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 145
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 86
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:10:14.2152 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.DispTotalWorthOfBank() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 161
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 87
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:10:28.5651 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayAllTransactionsForDay() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 260
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 89
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:18:13.4907 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 115
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.LogTransaction(String accNo, TransactionType type, Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 46
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 69
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 76
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:27:45.6929 ERROR AccType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccType
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.FindAllTransactions(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 309
+   at BankOfPratian.ConsoleApp.AccountManager.FindTransactionForAccount(String accNo) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 31
+   at BankOfPratian.ConsoleApp.Program.ViewTransactionHistory() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 252
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 25
+2024-09-03 14:46:21.2868 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.LogTransaction(String accNo, TransactionType type, Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 46
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 69
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 14:47:04.3168 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.LogTransaction(String accNo, TransactionType type, Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 46
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 69
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 14:52:23.2721 ERROR No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type. UserId= Action= CustomMessage= System.ArgumentException: No mapping exists from object type BankPratianCommon.ClassLibrary.SavingsAccount to a known managed provider native type.
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromValue(Type dataType, Object value, Boolean inferLen, Boolean streamAllowed)
+   at System.Data.SqlClient.MetaType.GetMetaTypeFromType(Type dataType)
+   at System.Data.SqlClient.SqlParameter.GetMetaTypeOnly()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.Create(Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 61
+   at BankOfPratian.ConsoleApp.AccountManager.Withdraw(IAccount account, Double amount, String pin) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 72
+   at BankOfPratian.ConsoleApp.Program.WithdrawMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 162
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 78
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:00:13.1758 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.LogTransaction(String accNo, TransactionType type, Transaction transaction) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 46
+   at BankOfPratian.ConsoleApp.AccountManager.Deposit(IAccount account, Double amount) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 87
+   at BankOfPratian.ConsoleApp.Program.DepositMoney() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 141
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 77
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:03:46.2213 ERROR Requested value 'reular' was not found. UserId= Action= CustomMessage= System.ArgumentException: Requested value 'reular' was not found.
+   at System.Enum.TryParseByName[TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TStorage& result)
+   at System.Enum.TryParseByValueOrName[TUnderlying,TStorage](RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, TUnderlying& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   at BankOfPratian.ConsoleApp.Program.OpenNewAccount() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 106
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 75
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:09:33.9188 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:15:19.3044 ERROR Violation of PRIMARY KEY constraint 'PK__CitiBank__91CBC378D10BE002'. Cannot insert duplicate key in object 'dbo.CitiBank'. The duplicate key value is (citi1001).
+The statement has been terminated. UserId= Action= CustomMessage= System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__CitiBank__91CBC378D10BE002'. Cannot insert duplicate key in object 'dbo.CitiBank'. The duplicate key value is (citi1001).
+The statement has been terminated.
+   at PratianBankDatabase.ClassLibrary.ExternalBankRepository.Update(ExternalAccount account, Double amount, String bank) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\ExternalBankRepository.cs:line 33
+   at BankOfPratian.ConsoleApp.AccountManager.ExternalTransfer(ExternalTransfer extTransfer) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\AccountManager.cs:line 148
+   at BankOfPratian.ConsoleApp.Program.ExternalTransfer() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 221
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 80
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+ClientConnectionId:33ebd835-523d-4344-a6c4-d8c6851e1d6a
+Error Number:2627,State:1,Class:14
+2024-09-03 15:19:32.8661 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:31:03.2250 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 118
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 33
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 15:51:10.3707 ERROR The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception. UserId= Action= CustomMessage= System.TypeInitializationException: The type initializer for 'BankOfPratian.ConsoleApp.TransactionLog' threw an exception.
+ ---> System.IndexOutOfRangeException: tansDate
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at PratianBankDatabase.ClassLibrary.TransactionDbRepository.GetAllTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\TransactionDbRepository.cs:line 136
+   at BankOfPratian.ConsoleApp.TransactionLog..cctor() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 12
+   --- End of inner exception stack trace ---
+   at BankOfPratian.ConsoleApp.TransactionLog.GetTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\TransactionLog.cs:line 16
+   at BankOfPratian.ConsoleApp.ResultGenerator.PrintAllLogTransactions() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 35
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 83
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 16:05:06.4076 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.GetTotalNoOfAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 131
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 87
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 16:05:13.5276 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.DisplayNoOfAccTypeWise() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 147
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 88
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 16:27:27.2700 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.GetTotalNoOfAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 131
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 87
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
+2024-09-03 16:29:15.3953 ERROR AccountType UserId= Action= CustomMessage= System.IndexOutOfRangeException: AccountType
+   at System.Data.ProviderBase.BasicFieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at PratianBankDatabase.ClassLibrary.AccountDBRepository.GetAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\AccountDBRepository.cs:line 130
+   at BankOfPratian.ConsoleApp.ResultGenerator.GetTotalNoOfAccounts() in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\ResultGenerator.cs:line 131
+   at BankOfPratian.ConsoleApp.Program.ProcessChoice(String choice) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 87
+   at BankOfPratian.ConsoleApp.Program.Main(String[] args) in C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\BankOfPratian.ConsoleApp\Program.cs:line 27
