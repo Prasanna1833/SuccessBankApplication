@@ -1,0 +1,16 @@
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\bin\Debug\net8.0\PratianBankDatabase.ClassLibrary.deps.json
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\bin\Debug\net8.0\PratianBankDatabase.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\bin\Debug\net8.0\PratianBankDatabase.ClassLibrary.pdb
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\bin\Debug\net8.0\BankPratianCommon.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\bin\Debug\net8.0\BankPratianCommon.ClassLibrary.pdb
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.AssemblyInfo.cs
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianB.72B929AF.Up2Date
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\refint\PratianBankDatabase.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.pdb
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\ref\PratianBankDatabase.ClassLibrary.dll
+C:\Users\Prasanna.Hegde\OneDrive - Consilio\Documents\Projects\PratianBankDatabase.ClassLibrary\obj\Debug\net8.0\PratianBankDatabase.ClassLibrary.sourcelink.json
