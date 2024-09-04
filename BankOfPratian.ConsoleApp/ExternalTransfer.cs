@@ -11,7 +11,7 @@ namespace BankOfPratian.ConsoleApp
             {
                 ToExternalAcc = toExternalAcc;
                 FromAccPin = fromAccPin;
-                Status = TransactionStatus.OPEN;
+                Status = TransactionStatus.CLOSE;
             }
         }
     }
